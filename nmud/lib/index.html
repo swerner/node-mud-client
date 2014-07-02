@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <style>
+      #textbox::-webkit-scrollbar {
+        display: none;
+      }
+
+      #textbox {
+        background: black;
+        color: #333;
+      }
+
+      .white {
+        color: white;
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      #oldui {
+        position: absolute;
+        bottom: 0;
+      }
+
+      body{
+        position: relative;
+        height: 950px;
+        width: 850px;
+      }
+    </style>
+    <script src="index.js"></script>
+  <script>
+var $ = require('jquery');
+var ipc = require('ipc');
+
+$(function(){
+    $("#some-button").on('click', function(){
+      ipc.send('connect-to-mud', 'ping');
+    });
+
+    $("#tools").on("click", function(){
+      ipc.send('show-tools');
+    });
+
+    $("#sendmessage").on("click", function(){
+      ipc.send("send-message", $("#clientline").val());
+    });
+
+    $("#coremessage").on("click", function(){
+        ipc.send("core-message", true);
+        });
+
+    $("#doping").on("click", function(){
+        ipc.send("do-ping", true)
+        });
+});
+</script>
+</head>
+<body>
+<button id="some-button">Connect</button>
+<button id="tools">Tools</button>
+<div id="char-stats">
+  <div id="char-stats-hp">
+    <span id="char-stats-hp-current">0</span>
+    /
+    <span id="char-stats-hp-max">0</span>
+    (<span id="char-stats-hp-percent">0</span>)
+  </div>
+  <div id="char-stats-mana">
+    <span id="char-stats-mana-current">0</span>
+    /
+    <span id="char-stats-mana-max">0</span>
+    (<span id="char-stats-mana-percent">0</span>)
+  </div>
+  <div id="char-stats-moves">
+    <span id="char-stats-moves-current">0</span>
+    /
+    <span id="char-stats-moves-max">0</span>
+    (<span id="char-stats-moves-percent">0</span>)
+  </div>
+</div>
+<div id="mapPlugin">
+</div>
+<div id="consolePlugin">
+</div>
+<div id="consoleInput">
+</div>
+</body>
+</html>

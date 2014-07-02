@@ -1,0 +1,64 @@
+#consolePlugin{
+  width: 800px;
+  height: 400px;
+  background-color: black;
+  overflow: scroll;
+  font-family: "Courier New", "Lucida Console", Courier, Monaco, monospace;
+  font-size: 14px;
+}
+
+span.white {
+  color: #BBB;
+}
+
+span.bwhite {
+  color: #FFF;
+}
+
+span.blue {
+  color: #010BAF;
+}
+
+span.bblue {
+  color: #5555FE;
+}
+
+span.red {
+  color: #BB0000;
+}
+
+span.bred {
+  color: #FF5555;
+}
+
+span.green {
+  color: #09BC00;
+}
+
+span.bgreen {
+  color: #55FF55;
+}
+
+span.yellow {
+  color: #BBBB00;
+}
+
+span.byellow {
+  color: #FFFF55;
+}
+
+span.cyan {
+  color: #01BCAF;
+}
+
+span.bcyan {
+  color: #55FFFF;
+}
+
+span.magenta {
+  color: #BC0AAF;
+}
+
+span.bmagenta {
+  color: #FE55FE;
+}

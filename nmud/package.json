@@ -1,0 +1,20 @@
+{
+  "name": "nmud",
+  "productName": "nMud",
+  "version": "0.1.0",
+  "main": "./lib/main.js",
+  "dependencies": {
+    "jquery": "2.1.1",
+    "underscore": "1.6.0",
+    "telnet-stream": "0.0.4",
+    "coffee-script": "1.7.0",
+    "fs-plus": "^2.2.3",
+    "season": "^1.0.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-coffee": "~0.10",
+    "grunt-contrib-watch": "~0.6",
+    "grunt-contrib-haml": "~0.2"
+  }
+}

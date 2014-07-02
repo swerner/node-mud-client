@@ -1,0 +1,50 @@
+#mapPlugin {
+  width: 230px;
+  height: 230px;
+  margin: 0 auto;
+  border: 1px solid black;
+  position: relative;
+}
+
+#mapPlugin > div {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+  display: inline;
+  position: absolute;
+}
+
+#map_plugin_up_exit {
+  right: 0px;
+  top: 0px;
+}
+
+#map_plugin_down_exit {
+  left: 0px;
+  top: 150px;
+}
+
+#map_plugin_current_room {
+  top: 75px;
+  left: 75px;
+}
+
+#map_plugin_north_exit {
+  left: 75px;
+  top: 0px;
+}
+
+#map_plugin_east_exit {
+  left: 150px;
+  top: 75px;
+}
+
+#map_plugin_south_exit {
+  top: 150px;
+  left: 75px;
+}
+
+#map_plugin_west_exit {
+  top: 75px;
+  left: 0px;
+}
